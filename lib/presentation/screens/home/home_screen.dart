@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widgets_app/config/theme/menu/menu_items.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,6 +10,47 @@ class HomeScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Flutter + material 3'),
       ),
+      body: const _HomeView(),
+    );
+  }
+}
+
+class _HomeView extends StatelessWidget {
+  const _HomeView();
+
+  @override
+  Widget build(BuildContext context) {
+    
+    return ListView.builder(
+      itemCount: appMenuItems.length,
+      itemBuilder: (context, index ){
+        final menuItem = appMenuItems[index];
+        return _CustomListTitle(menuItem: menuItem);
+      }
+    );
+  }
+}
+
+class _CustomListTitle extends StatelessWidget {
+  const _CustomListTitle({
+    required this.menuItem,
+  });
+
+  final MenuItems menuItem;
+
+  @override
+  Widget build(BuildContext context) {
+
+    final colors = Theme.of(context).colorScheme;
+
+    return ListTile(
+      leading: Icon(menuItem.icon, color: colors.primary), //leading icono o widget que colocamos antes de...
+      trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary,), //trailing wifget al final de la fila
+      title: Text(menuItem.tittle),
+      subtitle: Text(menuItem.tittle),
+      onTap: (){
+        //TODO : navegar hacia otra pantalla.
+      },
     );
   }
 }
