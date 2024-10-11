@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:widgets_app/presentation/screens/home/home_screen.dart';
+
 
 class ButtonsScreen extends StatelessWidget {
 
@@ -16,7 +16,7 @@ class ButtonsScreen extends StatelessWidget {
       ),
       body: const _ButtonsView(),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.arrow_back_ios_new_rounded),
+        child: const Icon(Icons.arrow_back_ios_new_rounded),
         onPressed: (){
           context.pop();
         }
