@@ -24,7 +24,7 @@ class MenuItems {
     MenuItems(
       tittle: 'Tarjetas', 
       subTittle: 'Contenedor tuneado', 
-      link: '/tarjetas', 
+      link: '/cards', 
       icon: Icons.credit_card
     ),
 
