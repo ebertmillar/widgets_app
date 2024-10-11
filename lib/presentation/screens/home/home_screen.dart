@@ -52,7 +52,7 @@ class _CustomListTitle extends StatelessWidget {
       leading: Icon(menuItem.icon, color: colors.primary), //leading icono o widget que colocamos antes de...
       trailing: Icon(Icons.arrow_forward_ios_rounded, color: colors.primary,), //trailing wifget al final de la fila
       title: Text(menuItem.tittle),
-      subtitle: Text(menuItem.tittle),
+      subtitle: Text(menuItem.subTitle),
       onTap: (){
 
         context.push(menuItem.link);
