@@ -28,5 +28,12 @@ class MenuItems {
       icon: Icons.credit_card
     ),
 
+    MenuItems(
+      tittle: 'ProgressIndicatos', 
+      subTittle: 'Generales y Controlados', 
+      link: '/progress', 
+      icon: Icons.refresh_rounded
+    ),
+
 
  ];
