@@ -61,6 +61,13 @@ class MenuItems {
       subTitle: 'tutorial introductivo', 
       link: '/tutorial', 
       icon: Icons.accessible_rounded
+    ),
+
+    MenuItems(
+      tittle: 'Infinite Scroll y Pull', 
+      subTitle: 'tutorial introductivo', 
+      link: '/infinite', 
+      icon: Icons.list_alt_rounded
     )
 
  ];
