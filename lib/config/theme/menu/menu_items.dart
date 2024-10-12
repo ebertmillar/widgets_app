@@ -54,6 +54,13 @@ class MenuItems {
       subTitle: 'Una serie de controles de flutter', 
       link: '/ui-controls', 
       icon: Icons.check_box_outline_blank_rounded
+    ),
+
+    MenuItems(
+      tittle: 'Introduccion a la aplicacion', 
+      subTitle: 'tutorial introductivo', 
+      link: '/tutorial', 
+      icon: Icons.accessible_rounded
     )
 
  ];
