@@ -75,6 +75,15 @@ class MenuItems {
       subTitle: 'tutorial introductivo', 
       link: '/infinite', 
       icon: Icons.list_alt_rounded
-    )
+    ),
+
+    MenuItems(
+      tittle: 'Themes Changer', 
+      subTitle: 'Cambiar tema de la apliacion', 
+      link: '/theme_changer', 
+      icon: Icons.palette_rounded
+    ),
+    
+    
 
  ];
